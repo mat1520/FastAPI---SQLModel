@@ -15,8 +15,8 @@ Implementar una API REST mínima con FastAPI que permita realizar el proceso de 
 
 1. Clona el repositorio:
     ```bash
-    git clone <URL_DEL_REPOSITORIO>
-    cd <NOMBRE_DEL_PROYECTO>
+    git clone https://github.com/mat1520/FastAPI---SQLModel
+    cd FastAPI\ +\ SQLModel/
     ```
 
 2. Instala las dependencias:
@@ -26,12 +26,12 @@ Implementar una API REST mínima con FastAPI que permita realizar el proceso de 
 
 ## Ejecución
 
-Ejecuta la aplicación con Uvicorn:
+Ejecuta la aplicación con fastapi dev:
 ```bash
-uvicorn main:app --reload
+fastapi dev
 ```
 
-La API estará disponible en `http://127.0.0.1:8000`.
+La API estará disponible en `http://127.0.0.1:8000/login`.
 
 ## Documentación de la API
 
@@ -44,8 +44,8 @@ Accede a la documentación interactiva en `http://127.0.0.1:8000/docs` (Swagger 
 - **Cuerpo de la solicitud** (JSON):
   ```json
   {
-     "username": "usuario_ejemplo",
-     "password": "password_ejemplo"
+     "username": "ariel",
+     "password": "1234"
   }
   ```
 - **Respuesta exitosa** (200):
@@ -90,9 +90,3 @@ Respuesta:
 - `main.py`: Código principal de la API.
 - `requirements.txt`: Dependencias del proyecto.
 - `README.md`: Este archivo.
-
-## Entregables
-
-- Repositorio en GitHub/GitLab con el código.
-- Archivos principales: main.py, requirements.txt, README.md.
-- Ejemplos de ejecución en README.md.
